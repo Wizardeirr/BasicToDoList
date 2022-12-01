@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/anaSayfaFragment">
+
+    <fragment
+        android:id="@+id/anaSayfaFragment"
+        android:name="com.volkankelleci.basictodolist.AnaSayfaFragment"
+        android:label="fragment_ana_sayfa"
+        tools:layout="@layout/fragment_ana_sayfa" >
+        <action
+            android:id="@+id/action_anaSayfaFragment_to_yapilacaklarFragment"
+            app:destination="@id/yapilacaklarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/yapilacaklarFragment"
+        android:name="com.volkankelleci.basictodolist.YapilacaklarFragment"
+        android:label="fragment_yapilacaklar"
+        tools:layout="@layout/fragment_yapilacaklar" >
+        <action
+            android:id="@+id/action_yapilacaklarFragment_to_anaSayfaFragment"
+            app:destination="@id/anaSayfaFragment" />
+        <argument
+            android:name="yapilacaklar"
+            app:argType="string" />
+    </fragment>
+</navigation>
