@@ -23,10 +23,7 @@ class YapilacaklarFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        arguments?.let {
-            val yollanacakDeger=YapilacaklarFragmentArgs.fromBundle(it).yapilacaklar
-            yapilacaklarText.text=yollanacakDeger
-        }
+
         super.onViewCreated(view, savedInstanceState)
     }
 }

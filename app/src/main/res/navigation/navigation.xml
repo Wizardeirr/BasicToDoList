@@ -9,7 +9,7 @@
         android:id="@+id/anaSayfaFragment"
         android:name="com.volkankelleci.basictodolist.AnaSayfaFragment"
         android:label="fragment_ana_sayfa"
-        tools:layout="@layout/fragment_ana_sayfa" >
+        tools:layout="@layout/ekleme_fragment" >
         <action
             android:id="@+id/action_anaSayfaFragment_to_yapilacaklarFragment"
             app:destination="@id/yapilacaklarFragment" />
